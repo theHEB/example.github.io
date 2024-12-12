@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamborghini</title>
+    <script
+      src="https://kit.fontawesome.com/2823cdcd53.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Chapter 3/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        background-color: #1c1c1c;
+        color: #c0c0c0;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        height: 100%;
+      }
+      .header {
+        height: 15%;
+      }
+      .header table {
+        width: 100%;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #b8860b;
+      }
+      .home1 {
+        width: 25%;
+        font-weight: bold;
+        font-size: 30px;
+        color: #b8860b;
+      }
+      .home2 {
+        width: 50%;
+        text-align: center;
+      }
+      .home2 img {
+        width: 220px;
+      }
+      .home3 {
+        width: 25%;
+        text-align: right;
+      }
+      .home3 td a {
+        display: inline-block;
+        padding: 5px;
+        color: #b8860b;
+      }
+      .home3 td a:hover {
+        border: 3px solid #ff4500;
+        border-radius: 30px;
+        background-color: #ff4500;
+        color: #c0c0c0;
+      }
+      .home3 td a:active {
+        color: #c0c0c0;
+        background-color: #435812;
+        border: 3px solid #128012;
+      }
+      .home3 td a::first-letter {
+        font-size: 30px;
+      }
+      .middle {
+        height: 67%;
+        padding: 5px;
+        background: url(https://wallpapers.com/images/hd/gold-lamborghini-gztv7f6yaoszs9f0.jpg);
+        background-position: center;
+      }
+      .heb {
+        font-family: "Lavishly Yours", cursive;
+      }
+      .footer h1 {
+        text-align: center;
+      }
+      .footer p {
+        text-align: center;
+      }
+      .footersub {
+        display: flex;
+        width: 100%;
+        text-align: center;
+      }
+      .footersub div {
+        flex: 1;
+        padding: 50px;
+      }
+      i {
+        color: #a3d900;
+        font-weight: bold;
+        font-size: 50px;
+      }
+      .huracan {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        height: 30%;
+        background-color: #2e2e2e;
+      }
+      .huracan h1 {
+        color: #b8860b;
+      }
+      .huracan div {
+        flex: 1;
+      }
+      .view {
+        text-align: left;
+        padding: 10px;
+      }
+      .hclass {
+        background: url(https://images.carandbike.com/car-images/large/lamborghini/huracan-evo-rwd-spyder/lamborghini-huracan-evo-rwd-spyder.jpg?v=9);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .features {
+        text-align: left;
+        padding-left: 10px;
+      }
+      .plan {
+        display: flex;
+        height: 400px;
+        padding-bottom: 30px;
+      }
+      .plan-up {
+        text-align: center;
+      }
+      .plan div {
+        flex: 1;
+        margin: 0 25px;
+        border-radius: 20px;
+        text-align: center;
+        list-style-type: none;
+      }
+      .free {
+        background-color: #2e2e2e;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: box-shadow 0.27s;
+      }
+      .free:hover {
+        box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+      }
+      .basic {
+        background-color: #2e2e2e;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: box-shadow 0.27s;
+      }
+      .basic:hover {
+        box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+      }
+      .premium {
+        background-color: #463800;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: box-shadow 0.27s;
+      }
+      .premium:hover {
+        box-shadow: rgba(116, 116, 67, 0.6) 0px 7px 29px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <table>
+          <tbody>
+            <tr>
+              <td class="home1"><p>Home</p></td>
+              <td class="home2">
+                <img src="lamborghini.png" alt="" />
+              </td>
+              <td class="home3">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://www.mercedes-benz.com.tr/"
+                          target="_blank"
+                          >Mercedes</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          href="https://www.audi.com.tr/tr/web/tr.html"
+                          target="_blank"
+                          >Audi</a
+                        >
+                      </td>
+                      <td>
+                        <a href="https://www.opel.com.tr/" target="_blank"
+                          >Opel</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          href="https://www.bmw.com.tr/tr/index.html"
+                          target="_blank"
+                          >Bmw</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="middle"></div>
+      <div class="footer">
+        <h1>Who is the <span class="heb">HEB</span>?</h1>
+        <p>Hüseyin is a unique person in the world.</p>
+        <div class="footersub">
+          <div>
+            <i class="fa-regular fa-user"></i>
+            <h1>Student</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, animi aspernatur veniam corporis dolorum minus
+              corrupti autem cumque sequi nesciunt.
+            </p>
+          </div>
+          <div>
+            <i class="fa-regular fa-heart"></i>
+            <h1>Web Developer</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              consequuntur quisquam corporis qui ab recusandae culpa ullam amet
+              unde mollitia.
+            </p>
+          </div>
+          <div>
+            <i class="fa-regular fa-face-smile"></i>
+            <h1>Entrepreneur</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              fugiat laborum cum quae optio ad aut rerum modi doloremque illum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="huracan">
+        <div class="hclass"></div>
+        <div>
+          <table>
+            <tbody>
+              <tr>
+                <td><h1>Huracán EVO Spyder</h1></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    The Huracán EVO Spyder lets one experience the thrill of
+                    extreme driving. Colors, smells and sounds meld with a
+                    seductive design and ultra-light materials. The 640 hp
+                    naturally aspirated V10 engine roars with authority, as the
+                    exhaust announces the presence of a formidable machine. The
+                    aerodynamic lines of the super sports car, perfectly
+                    streamlined, slice through the air.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="view">
+                  <a
+                    class="btn btn-orange"
+                    href="https://www.lamborghini.com/en-en/models/huracan/huracan-evo-spyder"
+                    target="_blank"
+                    >View Features</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="plan-up"><h1>Become a Premium Member</h1></div>
+      <div class="plan">
+        <div></div>
+        <div class="free">
+          <h2>Free</h2>
+          <h4>0/month</h4>
+          <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <br /><br /><br /><br /><br /><br /><br />
+          </ul>
+          <button class="btn btn-orange">Choose Plan</button>
+        </div>
+        <div class="basic">
+          <h2>Basic</h2>
+          <h4>$9.99/month</h4>
+          <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <br /><br /><br /><br />
+          </ul>
+          <button class="btn btn-orange">Choose Plan</button>
+        </div>
+        <div class="premium">
+          <h2>Premium</h2>
+          <h4>$19.99/month</h4>
+          <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>H</li>
+            <li>I</li>
+            <li>J</li>
+            <br />
+          </ul>
+          <button class="btn btn-orange">Choose Plan</button>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>

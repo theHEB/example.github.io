@@ -1,0 +1,80 @@
+.btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.btn-yellow {
+  background: #f4c300;
+  color: #000;
+}
+
+.btn-yellow:hover {
+  background: #000;
+  color: #f4c300;
+}
+.btn-yellow:active {
+  background: #f4c300;
+  color: #000;
+}
+
+.btn-outline-yellow {
+  background: #000;
+  color: #f4c300;
+}
+
+.btn-outline-yellow:hover {
+  background: #f4c300;
+  color: #000;
+}
+
+.btn-orange {
+  background: #ff4500;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background: #fff;
+  color: #ff4500;
+}
+.btn-orange:active {
+  background: #ff4500;
+  color: #fff;
+}
+.btn-outline-orange {
+  background: #fff;
+  color: #ff4500;
+}
+
+.btn-outline-orange:hover {
+  background: #ff4500;
+  color: #fff;
+}
+.btn-green {
+  background: #a3d900;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background: #fff;
+  color: #a3d900;
+}
+.btn-green:active {
+  background: #a3d900;
+  color: #fff;
+}
+.btn-outline-green {
+  background: #fff;
+  color: #a3d900;
+}
+
+.btn-outline-green:hover {
+  background: #a3d900;
+  color: #fff;
+}
